@@ -18,7 +18,7 @@ def build_argparser() -> argparse.ArgumentParser:
     p.add_argument("--batch-size", type=int, default=64)
     p.add_argument("--lr", type=float, default=1e-3)
     p.add_argument("--epochs", type=int, default=20)
-    p.add_argument("--target-acc", type=float, default=0.90)
+    p.add_argument("--target-acc", type=float, default=0.995)
     p.add_argument("--num-workers", type=int, default=2)
     p.add_argument("--deterministic", action="store_true", help="Enable deterministic CUDA")
     p.add_argument("--device", type=str, default="auto", choices=["auto", "cuda", "cpu"], help="Select device")

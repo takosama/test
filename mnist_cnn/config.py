@@ -9,7 +9,7 @@ class TrainConfig:
     batch_size: int = 64
     lr: float = 1e-3
     epochs: int = 20
-    target_acc: float = 0.90
+    target_acc: float = 0.995
     num_workers: int = 2
     deterministic: bool = False
     device: str = "auto"  # "auto" | "cuda" | "cpu"
